@@ -7,18 +7,19 @@ using Example.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 if (builder.Environment.IsProduction())
 {
-    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    // PostgreSQL for production
+    var connectionString = builder.Configuration.GetConnectionString("pgConnection");
     builder.Services.AddDbContext<ApplicationDbContext>(options =>
         options.UseNpgsql(connectionString));
 }
-else
-{
+else {
+    // SQLite for development
     builder.Services.AddDbContext<ApplicationDbContext>(options =>
         options.UseSqlite("Data Source=app.db"));
 }
+
 
 builder.Services.AddControllersWithViews();
 
