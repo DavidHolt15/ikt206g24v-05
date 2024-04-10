@@ -7329,11 +7329,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DaviH\\ikt206\\ikt206g24v-05\\Example.csproj",
+      "projectUniqueName": "C:\\Users\\DaviH\\RiderProjects\\ikt206g24v-05\\Example.csproj",
       "projectName": "Example",
-      "projectPath": "C:\\Users\\DaviH\\ikt206\\ikt206g24v-05\\Example.csproj",
+      "projectPath": "C:\\Users\\DaviH\\RiderProjects\\ikt206g24v-05\\Example.csproj",
       "packagesPath": "C:\\Users\\DaviH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DaviH\\ikt206\\ikt206g24v-05\\obj\\",
+      "outputPath": "C:\\Users\\DaviH\\RiderProjects\\ikt206g24v-05\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DaviH\\AppData\\Roaming\\NuGet\\NuGet.Config"

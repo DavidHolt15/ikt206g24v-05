@@ -23,7 +23,6 @@ namespace Example.Data
             
             db.Authors.AddRange(authors);
 
-            // Finally save the added relationships
             db.SaveChanges();
         }
     }

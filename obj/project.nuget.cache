@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c6/dv20qUhv/XaIaGykFILrInT5EDSTh4O4a/l7ZLHydjhD4LRtYqILTZZaZzMc50hV29McTm5WPUDVVVfbhSQ==",
+  "dgSpecHash": "tqjk2LNkpUp/k+Xx25KU5uDoBxXJhxc7MrpCHKgMyIX6hghrtxG2cw48fGxxKBc+dem6LwQYmivf2SuVfVD7rw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DaviH\\ikt206\\ikt206g24v-05\\Example.csproj",
+  "projectFilePath": "C:\\Users\\DaviH\\RiderProjects\\ikt206g24v-05\\Example.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DaviH\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\DaviH\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
