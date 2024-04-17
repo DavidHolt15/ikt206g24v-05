@@ -6,24 +6,21 @@ using Microsoft.Extensions.Hosting;
 using Example.Data;
 
 var builder = WebApplication.CreateBuilder(args);
-
+Console.WriteLine("Current environment: " + builder.Environment.EnvironmentName);
 if (builder.Environment.IsProduction())
 {
-    // PostgreSQL for production
     var connectionString = builder.Configuration.GetConnectionString("pgConnection");
     builder.Services.AddDbContext<ApplicationDbContext>(options =>
         options.UseNpgsql(connectionString));
 }
 else {
-    // SQLite for development
     builder.Services.AddDbContext<ApplicationDbContext>(options =>
         options.UseSqlite("Data Source=app.db"));
 }
-
+Console.WriteLine("Current environment: " + builder.Environment.EnvironmentName);
 
 builder.Services.AddControllersWithViews();
 
-// Add identity services
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
